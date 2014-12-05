@@ -1,0 +1,83 @@
+
+Building: Classic (Debug)
+Performing main compilation...
+
+Compiling interface definitions
+/Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/Live_Camera.nib" "/Users/Peter/Projects/Live_Camera/Classic/Live_Camera.xib" --sdk "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk"
+
+Optimizing content files
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/Default-568h@2x.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/Default-568h@2x.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/flash-auto.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/flash-auto.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/flash-auto@2x.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/flash-auto@2x.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/flash-off.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/flash-off.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/flash-off@2x.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/flash-off@2x.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/flash.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/flash.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/flash@2x.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/flash@2x.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/focus-crosshair.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/focus-crosshair.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/focus-crosshair@2x.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/focus-crosshair@2x.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/front-camera.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/front-camera.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/front-camera@2x.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/front-camera@2x.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/grid-icon.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/grid-icon.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/grid-icon@2x.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/grid-icon@2x.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/grid.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/grid.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/grid@2x.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/grid@2x.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/library.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/library.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/library@2x.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/library@2x.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/micro_carbon.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/micro_carbon.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/micro_carbon@2x.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/micro_carbon@2x.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/take-snap.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/take-snap.png"
+
+Optimizing png for iOS
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/pngcrush -q -iphone -f 0 "/Users/Peter/Projects/Live_Camera/Classic/Resources/take-snap@2x.png" "/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/take-snap@2x.png"
+/Library/Frameworks/Mono.framework/Versions/3.10.0/bin/mcs /noconfig "/r:/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/mscorlib.dll" -nostdlib "/out:/Users/Peter/Projects/Live_Camera/Classic/bin/Debug/Live_Camera.dll" "/r:/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.dll" "/r:/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Xml.dll" "/r:/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Core.dll" "/r:/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/monotouch.dll" "/r:/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Core.dll" /nologo /warn:4 /debug:full /optimize- /codepage:utf8 "/define:DEBUG"  "/define:__MOBILE__"  "/define:__IOS__"  /t:library "/Users/Peter/Projects/Live_Camera/Classic/Properties/AssemblyInfo.cs" "/Users/Peter/Projects/Live_Camera/Classic/Live_Camera.cs" "/Users/Peter/Projects/Live_Camera/Classic/Live_Camera.designer.cs" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/Default-568h@2x.png,__monotouch_content_Default-568h@2x.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/flash-auto.png,__monotouch_content_flash-auto.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/flash-auto@2x.png,__monotouch_content_flash-auto@2x.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/flash-off.png,__monotouch_content_flash-off.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/flash-off@2x.png,__monotouch_content_flash-off@2x.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/flash.png,__monotouch_content_flash.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/flash@2x.png,__monotouch_content_flash@2x.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/focus-crosshair.png,__monotouch_content_focus-crosshair.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/focus-crosshair@2x.png,__monotouch_content_focus-crosshair@2x.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/front-camera.png,__monotouch_content_front-camera.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/front-camera@2x.png,__monotouch_content_front-camera@2x.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/grid-icon.png,__monotouch_content_grid-icon.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/grid-icon@2x.png,__monotouch_content_grid-icon@2x.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/grid.png,__monotouch_content_grid.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/grid@2x.png,__monotouch_content_grid@2x.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/library.png,__monotouch_content_library.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/library@2x.png,__monotouch_content_library@2x.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/micro_carbon.png,__monotouch_content_micro__carbon.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/micro_carbon@2x.png,__monotouch_content_micro__carbon@2x.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/take-snap.png,__monotouch_content_take-snap.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/take-snap@2x.png,__monotouch_content_take-snap@2x.png" "/res:/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/Live_Camera.nib,__monotouch_content_Live__Camera.nib" 
+Compilation failed: 1 error(s), 1 warnings
+
+/Users/Peter/Projects/Live_Camera/Classic/Live_Camera.cs(15,8): warning CS0414: The private field `Live_Camera.Live_Camera.pickerDidShow' is assigned but its value is never used
+error CS1566: Error reading resource file `/Users/Peter/Projects/Live_Camera/Classic/obj/Debug/resources/Live_Camera.nib'
+
+
+Build complete -- 1 error, 1 warning
+
+---------------------- Done ----------------------
+
+Build: 1 error, 1 warning
