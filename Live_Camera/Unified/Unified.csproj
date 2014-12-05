@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{932318A3-A589-477C-94F1-781E5F32EB6F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Live_Camera</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Live_Camera</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Live_Camera.cs" />
+    <Compile Include="Live_Camera.designer.cs">
+      <DependentUpon>Live_Camera.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <InterfaceDefinition Include="Live_Camera.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\flash.png" />
+    <BundleResource Include="Resources\flash%402x.png" />
+    <BundleResource Include="Resources\flash-auto.png" />
+    <BundleResource Include="Resources\flash-auto%402x.png" />
+    <BundleResource Include="Resources\flash-off.png" />
+    <BundleResource Include="Resources\flash-off%402x.png" />
+    <BundleResource Include="Resources\focus-crosshair.png" />
+    <BundleResource Include="Resources\focus-crosshair%402x.png" />
+    <BundleResource Include="Resources\front-camera.png" />
+    <BundleResource Include="Resources\front-camera%402x.png" />
+    <BundleResource Include="Resources\grid.png" />
+    <BundleResource Include="Resources\grid%402x.png" />
+    <BundleResource Include="Resources\grid-icon.png" />
+    <BundleResource Include="Resources\grid-icon%402x.png" />
+    <BundleResource Include="Resources\library.png" />
+    <BundleResource Include="Resources\library%402x.png" />
+    <BundleResource Include="Resources\micro_carbon.png" />
+    <BundleResource Include="Resources\micro_carbon%402x.png" />
+    <BundleResource Include="Resources\take-snap.png" />
+    <BundleResource Include="Resources\take-snap%402x.png" />
+  </ItemGroup>
+</Project>
