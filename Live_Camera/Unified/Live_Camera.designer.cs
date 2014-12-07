@@ -7,7 +7,7 @@
 using Foundation;
 using System.CodeDom.Compiler;
 
-namespace Live_Camera
+namespace Camera
 {
 	[Register ("Live_Camera")]
 	partial class Live_Camera

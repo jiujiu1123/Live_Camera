@@ -12,7 +12,6 @@ namespace Live_Camera
 	public partial class Live_Camera : UIViewController
 	{
 		UIImagePickerController imgPicker;
-		bool pickerDidShow;
 		bool FrontCamera;
 		bool  haveImage;
 		internal static bool initializeCamera, photoFromCam;
@@ -43,7 +42,7 @@ namespace Live_Camera
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			pickerDidShow = false;
+			//pickerDidShow = false;
 			FrontCamera = false;
 			captureImage.Hidden = true;
 			imgPicker = new UIImagePickerController ();

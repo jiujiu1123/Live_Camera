@@ -8,6 +8,7 @@ namespace Live_Camera_Demo
 	{
 		public Live_Camera_DemoViewController (IntPtr handle) : base (handle)
 		{
+
 		}
 
 		public override void DidReceiveMemoryWarning ()
@@ -33,16 +34,13 @@ namespace Live_Camera_Demo
 		public override void ViewDidAppear (bool animated)
 		{	
 			base.ViewDidAppear (animated);
-
-			Btn_Show.TouchUpInside+= (object sender, EventArgs e) => 
-			{
-				Add_Cam();
-			};
+			Add_Cam();
+			Btn_Show.TouchDown+= (object sender, EventArgs e) => Add_Cam();
 		}
 
 		private void Add_Cam()
 		{
-			var live = new Live_Camera.Live_Camera();
+			var live = new Camera.Live_Camera();
 			live.View.Frame= new CoreGraphics.CGRect(new CoreGraphics.CGPoint(live.View.Frame.X+640,live.View.Frame.Y),live.View.Frame.Size);
 			UIView.Animate (1, () => {
 				live.View.Frame= new CoreGraphics.CGRect(new CoreGraphics.CGPoint(live.View.Frame.X-640,live.View.Frame.Y),live.View.Frame.Size);

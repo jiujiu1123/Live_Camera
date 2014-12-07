@@ -7,12 +7,11 @@ using CoreMotion;
 using CoreAnimation;
 using CoreGraphics;
 
-namespace Live_Camera
+namespace Camera
 {
 	public partial class Live_Camera : UIViewController
 	{
 		UIImagePickerController imgPicker;
-		bool pickerDidShow;
 		bool FrontCamera;
 		bool  haveImage;
 		internal static bool initializeCamera, photoFromCam;
@@ -22,9 +21,13 @@ namespace Live_Camera
 		public delegate void DidFinishPickingImage_delegate(UIImage image);
 		public delegate void CameraControllerDidCancel_delegate();
 		public delegate void CameraControllerdidSkipped_delegate();
+		public delegate void LibarydidCalled_delegate();
+		public delegate void LibaryWillDisappear_delegate();
 		public DidFinishPickingImage_delegate didFinishPickingImage;
 		public CameraControllerDidCancel_delegate CameraControllerDidCancel;
 		public CameraControllerdidSkipped_delegate CameraControllerdidSkipped;
+		public LibarydidCalled_delegate LibarydidCalled;
+		public LibaryWillDisappear_delegate LibaryWillDisappear;
 		internal CGRect Rect;
 
 		public Live_Camera () : base ("Live_Camera", null)
@@ -36,14 +39,13 @@ namespace Live_Camera
 		{
 			// Releases the view if it doesn't have a superview.
 			base.DidReceiveMemoryWarning ();
-			
+
 			// Release any cached data, images, etc that aren't in use.
 		}
 
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			pickerDidShow = false;
 			FrontCamera = false;
 			captureImage.Hidden = true;
 			imgPicker = new UIImagePickerController ();
@@ -60,7 +62,6 @@ namespace Live_Camera
 			base.ViewWillAppear (animated);
 			UIApplication.SharedApplication.SetStatusBarHidden (true, true);
 		}
-
 		public override void ViewDidAppear (bool animated)
 		{
 			base.ViewDidAppear (animated);
@@ -68,6 +69,10 @@ namespace Live_Camera
 				initializeCamera = false;
 				finitializeCamera ();
 			}
+		}
+		public override void ViewWillDisappear (bool animated)
+		{
+			base.ViewWillDisappear (animated);
 		}
 		private void finitializeCamera()
 		{
@@ -205,7 +210,7 @@ namespace Live_Camera
 			UIView.Animate (
 				duration: 0.2,
 				animation: () => {
-				//	photoBar.Center = new CGPoint (photoBar.Center.X, photoBar.Center.Y - 116);
+					//	photoBar.Center = new CGPoint (photoBar.Center.X, photoBar.Center.Y - 116);
 					topBar.Center = new CGPoint (topBar.Center.X, topBar.Center.Y + 44);
 				});
 		}
@@ -328,12 +333,22 @@ namespace Live_Camera
 				finitializeCamera();
 			}
 		}
+		private void switchToLibrary_trigger()
+		{
+			if (LibarydidCalled != null) {
+				LibarydidCalled ();
+			} else {
+				LibarydidCalled = new LibarydidCalled_delegate(()=>{});
+				LibarydidCalled();
+			}
+		}
 		partial void switchToLibrary (UIKit.UIButton sender)
 		{
 			if(session!=null)
 			{
 				session.StopRunning();
 			}
+			switchToLibrary_trigger();
 			PresentViewController(imgPicker,true,null);
 		}
 		partial void toogleFlash (UIKit.UIButton sender)
@@ -399,12 +414,18 @@ namespace Live_Camera
 				}
 				if (outputImage != null) {
 					Controller.captureImage.Hidden = false;
-				//	Controller.processImage (outputImage);
+					//	Controller.processImage (outputImage);
 					Controller.captureImage.Image = outputImage;
 					picker.DismissViewController (true, null);
 					Controller.hideControllers ();
 					Controller.photoCaptureButton.Enabled = false;
 					Controller.View.Frame = Controller.Rect;
+					if (Controller.LibaryWillDisappear != null) {
+						Controller.LibaryWillDisappear ();
+					} else {
+						Controller.LibaryWillDisappear = new Live_Camera.LibaryWillDisappear_delegate(()=>{});
+						Controller.LibaryWillDisappear();
+					}
 				}
 			}
 		}
@@ -412,6 +433,13 @@ namespace Live_Camera
 		{
 			Live_Camera.initializeCamera = true;
 			picker.DismissViewController (true,null);
+			Controller.View.Frame = Controller.Rect;
+			if (Controller.LibaryWillDisappear != null) {
+				Controller.LibaryWillDisappear ();
+			} else {
+				Controller.LibaryWillDisappear = new Live_Camera.LibaryWillDisappear_delegate(()=>{});
+				Controller.LibaryWillDisappear();
+			}
 		}
 
 		public picker(Live_Camera controller)
